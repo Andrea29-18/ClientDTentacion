@@ -20,17 +20,23 @@ const Navbar = () => {
         <li><a href="#familia">Familia</a></li>
         <li>
           <button onClick={handleCartClick} className="icon-button">
-            <img src={storeIcon} alt="Sucursal" className="icon-image" /> {/* Imagen como botón */}
+            <img src={storeIcon} alt="Sucursal" className="icon-image" /> 
           </button>
         </li>
         <li>
           <button onClick={handleCartClick} className="icon-button">
-            <img src={cartIcon} alt="Carrito" className="icon-image" /> {/* Imagen como botón */}
+            <img src={cartIcon} alt="Carrito" className="icon-image" />
           </button>
         </li>
         <li>
           <button onClick={handleCartClick} className="icon-button">
-            <img src={userIcon} alt="Usuario" className="icon-image" /> {/* Imagen como botón */}
+            <img src={userIcon} alt="Usuario" className="icon-image" />
+          </button>
+        </li>
+        {/* PARCHE: BORRAR DESPUES */}
+        <li>
+          <button onClick={handleCartClick} className="icon-button">
+            <img src={userIcon} alt="Usuario" className="icon-image" />
           </button>
         </li>
       </ul>
